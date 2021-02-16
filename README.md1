@@ -1,0 +1,87 @@
+# json_tutorial
+
+JSON:(javaScript object notation)
+--> Data Representation Format
+--> commonly used for APIs and configs
+--> lightweight and easy to read/write
+-->integrates easily with most languages.
+
+JSON TYpes:
+-->strings "helo-world"
+-->number 10 1.2
+-->booleans true false
+-->null null
+--> Array [1,2,3] ["hello", "world"]
+-->objects {"key":"value"} {"age":30}
+
+[
+  { 
+    "name": "big corp",
+    "numberofemploy": 10000,
+    "ceo": "mary",
+     "rating": 3.6
+  },
+ {
+   "name": "small startup",
+   "numberofEmployees": 3,
+   "ceo": null,
+   "rating": 4.3
+ }
+]
+--------------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+   <title>JSON Example</title>
+</head>
+<body>
+     <script type="text/javascript">
+      let companies = 
+[
+  { 
+    "name": "big corp",
+    "numberofemploy": 10000,
+    "ceo": "mary",
+     "rating": 3.6
+  },
+ {
+   "name": "small startup",
+   "numberofEmployees": 3,
+   "ceo": null,
+   "rating": 4.3
+ }
+]
+
+</script>
+</body>
+</html>
+------------------------------------------
+json nested using jq
+var jcontent = {
+  "firstName": "John",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    }
+  ],
+  "children": [],
+  "spouse": null
+}
+console.log(jcontent);
+
+var output = document.gIdtElementById('output');
+output.innerHTML = jcontent.firstName + ' '  + jcontent.lastName;
