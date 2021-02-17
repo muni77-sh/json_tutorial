@@ -85,3 +85,51 @@ console.log(jcontent);
 
 var output = document.gIdtElementById('output');
 output.innerHTML = jcontent.firstName + ' '  + jcontent.lastName;
+===========================================
+simple JSON ONJECT
+1.var chaitanya = {
+"firstName":"chaitnya",
+"lastName":"singh",
+"age":"28"
+}
+2.{
+	"company": "volkswagen",
+	"name": "vento",
+	"price": 800000
+}
+
+2. data Types :
+--a sring
+--a number
+--an object (json)
+--an array
+--a boolean
+--null
+
+*srings: json must be written in doube quotes
+example: {"name":"john"}
+
+*Numbers: In json must be an integer or floating point.
+ex : {"age":30}
+
+*json Objects:values in json can be objects
+
+{
+	"employee": {
+		"name": "john",
+		"age": 30,
+		"city": "new york"
+	}
+}
+
+*json array:vaues in json can be arrays
+{
+ "employees":["john","anna","peter"]
+}
+
+*json booeans: values in json can be true true/false.
+
+{"sale":true}
+
+*json null: vaule in json can be nul
+{"middlename":null}
