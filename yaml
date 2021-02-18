@@ -33,4 +33,98 @@ YAML is a human-readable data serialization standard that can be used in conjunc
 <p><a href="https://github.com/nodeca/js-yaml">https://github.com/nodeca/js-yaml</a></p>
 </body>
 </html>
--------------
+--------------------------------------------------------------------------------------
+yaml
+--- 
+- 
+  martin: 
+    job: Developer
+    name: "Martin D'vloper"
+    skills: 
+      - python
+      - perl
+      - pascal
+- 
+  tabitha: 
+    job: Developer
+    name: "Tabitha Bitumen"
+    skills: 
+      - lisp
+      - fortran
+      - erlang
+      =============================================================
+      
+     --- 
+education: |-
+    4 GCSEs
+    3 A-Levels
+    BSc in the Internet of Things
+employed: true
+foods: 
+  - Apple
+  - Orange
+  - Strawberry
+  - Mango
+job: Developer
+languages: 
+  pascal: Lame
+  perl: Elite
+  python: Elite
+name: "Martin D'vloper"
+skill: Elite
+==================================
+
+--- 
+calling-birds: 
+  - huey
+  - dewey
+  - louie
+  - fred
+doe: "a deer, a female deer"
+french-hens: 3
+pi: 3.14159
+ray: "a drop of golden sun"
+xmas: true
+xmas-fifth-day: 
+  calling-birds: four
+  french-hens: 3
+  golden-rings: 5
+  partridges: 
+    count: 1
+    location: "a pear tree"
+  turtle-doves: two
+  ======================================================
+  array with objects
+--- 
+AAPL: 
+  - 
+    date: 11/27/2015
+    shares: -75.088
+  - 
+    date: 11/26/2015
+    shares: 75.088
+    =================================================
+    nested with array
+--- 
+execution: 
+  - 
+    concurrency: 10
+    hold-for: 5m
+    ramp-up: 2m
+    scenario: yaml_example
+provisioning: local
+reporting: 
+  - 
+    module: final-stats
+  - 
+    module: console
+scenarios: 
+  yaml_example: 
+    requests: 
+      - "http://example.com/"
+    retrieve-resources: false
+settings: 
+  check-interval: 5s
+  default-executor: jmeter
+
+      
