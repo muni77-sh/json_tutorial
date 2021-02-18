@@ -133,3 +133,259 @@ ex : {"age":30}
 
 *json null: vaule in json can be nul
 {"middlename":null}
+=====================================================
+
+{
+	"accounting": [{
+			"firstName": "John",
+			"lastName": "Doe",
+			"age": 23
+		},
+
+		{
+			"firstName": "Mary",
+			"lastName": "Smith",
+			"age": 32
+		}
+	],
+	"sales": [{
+			"firstName": "Sally",
+			"lastName": "Green",
+			"age": 27
+		},
+
+		{
+			"firstName": "Jim",
+			"lastName": "Galley",
+			"age": 41
+		}
+	]
+}
+
+
+=============================================
+json object
+ {
+ 	"medications": [{
+ 		"aceInhibitors": [{
+ 			"name": "lisinopril",
+ 			"strength": "10 mg Tab",
+ 			"dose": "1 tab",
+ 			"route": "PO",
+ 			"sig": "daily",
+ 			"pillCount": "#90",
+ 			"refills": "Refill 3"
+ 		}],
+ 		"antianginal": [{
+ 			"name": "nitroglycerin",
+ 			"strength": "0.4 mg Sublingual Tab",
+ 			"dose": "1 tab",
+ 			"route": "SL",
+ 			"sig": "q15min PRN",
+ 			"pillCount": "#30",
+ 			"refills": "Refill 1"
+ 		}],
+ 		"anticoagulants": [{
+ 			"name": "warfarin sodium",
+ 			"strength": "3 mg Tab",
+ 			"dose": "1 tab",
+ 			"route": "PO",
+ 			"sig": "daily",
+ 			"pillCount": "#90",
+ 			"refills": "Refill 3"
+ 		}],
+ 		"betaBlocker": [{
+ 			"name": "metoprolol tartrate",
+ 			"strength": "25 mg Tab",
+ 			"dose": "1 tab",
+ 			"route": "PO",
+ 			"sig": "daily",
+ 			"pillCount": "#90",
+ 			"refills": "Refill 3"
+ 		}],
+ 		"diuretic": [{
+ 			"name": "furosemide",
+ 			"strength": "40 mg Tab",
+ 			"dose": "1 tab",
+ 			"route": "PO",
+ 			"sig": "daily",
+ 			"pillCount": "#90",
+ 			"refills": "Refill 3"
+ 		}],
+ 		"mineral": [{
+ 			"name": "potassium chloride ER",
+ 			"strength": "10 mEq Tab",
+ 			"dose": "1 tab",
+ 			"route": "PO",
+ 			"sig": "daily",
+ 			"pillCount": "#90",
+ 			"refills": "Refill 3"
+ 		}]
+ 	}],
+ 	"labs": [{
+ 			"name": "Arterial Blood Gas",
+ 			"time": "Today",
+ 			"location": "Main Hospital Lab"
+ 		},
+ 		{
+ 			"name": "BMP",
+ 			"time": "Today",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "BNP",
+ 			"time": "3 Weeks",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "BUN",
+ 			"time": "1 Year",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "Cardiac Enzymes",
+ 			"time": "Today",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "CBC",
+ 			"time": "1 Year",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "Creatinine",
+ 			"time": "1 Year",
+ 			"location": "Main Hospital Lab"
+ 		},
+ 		{
+ 			"name": "Electrolyte Panel",
+ 			"time": "1 Year",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "Glucose",
+ 			"time": "1 Year",
+ 			"location": "Main Hospital Lab"
+ 		},
+ 		{
+ 			"name": "PT/INR",
+ 			"time": "3 Weeks",
+ 			"location": "Primary Care Clinic"
+ 		},
+ 		{
+ 			"name": "PTT",
+ 			"time": "3 Weeks",
+ 			"location": "Coumadin Clinic"
+ 		},
+ 		{
+ 			"name": "TSH",
+ 			"time": "1 Year",
+ 			"location": "Primary Care Clinic"
+ 		}
+ 	],
+ 	"imaging": [{
+ 			"name": "Chest X-Ray",
+ 			"time": "Today",
+ 			"location": "Main Hospital Radiology"
+ 		},
+ 		{
+ 			"name": "Chest X-Ray",
+ 			"time": "Today",
+ 			"location": "Main Hospital Radiology"
+ 		},
+ 		{
+ 			"name": "Chest X-Ray",
+ 			"time": "Today",
+ 			"location": "Main Hospital Radiology"
+ 		}
+ 	]
+ }
+ 
+ 
+ 
+ 
+ ======================================================================================
+ {  
+   "product_id":"5008798",
+   "name":"Awesome Dino Shirt",
+   "price":"5.99",
+   "attributes":{               // object begins
+      "color":"blue",
+      "size":"large",
+      "type":"clothing",
+      "ounces":"5"
+   }                           // object ends
+}
+
+=========================================================================================
+{
+   "order_id":"1234",
+   "customer_id":"100",
+   "line_items":[            // array begins
+      {
+         "product_id":"5008798",
+         "price":"5.99"
+      }
+   ]                        // array ends
+}
+
+
+===========================================================================================
+
+nested
+{
+	"order_id": "1234",
+	"created_at": "2015-01-01 00:00:00",
+	"customer_id": "100",
+	"line_items": [{
+		"product_id": "5008798",
+		"price": "5.99",
+		"quantity": "1",
+		"tax_lines": [{
+			"price": "5.99",
+			"rate": "0.06",
+			"title": "State Tax"
+		}]
+	}]
+}
+
+==========================================================================
+
+{
+	"forum": [{
+		"id": "1",
+		"created": "2010-03-19 ",
+		"updated": "2010-03-19 ",
+		"user_id": "1",
+		"vanity": "gamers",
+		"displayname": "gamers",
+		"private": "0",
+		"description": "All things gaming",
+		"count_followers": "62",
+		"count_members": "0",
+		"count_messages": "5",
+		"count_badges": "0",
+		"top_badges": "",
+		"category_id": "5",
+		"logo": "gamers.jpeg",
+		"theme_id": "1"
+	}]
+}
+=========================================================================
+
+ jQUERY
+$.get('forums.php', function(json, textStatus) {
+            //optional stuff to do after success
+            alert(textStatus);
+            alert(json);
+
+        });
+ 
+ 
+ 
+ 
+ 
+
+
+
+
